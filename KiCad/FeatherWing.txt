@@ -1,0 +1,21 @@
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Cu.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Cu.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Adhesive.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Adhesive.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Paste.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Paste.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Mask.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Mask.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-User_Drawings.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-User_Comments.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-User_Eco1.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-User_Eco2.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-Edge_Cuts.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-Margin.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Courtyard.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Courtyard.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-F_Fab.gbr'.
+Plotted to 'C:\Users\ssamj\Downloads\HamWing-main\KiCad\FeatherWing_KC5-B_Fab.gbr'.
+Info: Done.
