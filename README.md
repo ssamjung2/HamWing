@@ -15,3 +15,7 @@ This project uses the following license for hardware, software and documentation
 
 ![hamwing_license](https://user-images.githubusercontent.com/28584917/112387754-86eda080-8cc8-11eb-9b5d-293d7445410d.png)
 
+## April 2024
+I imported the project into KiCad 8.0, and captured new renders of the project.
+
+73 de KW9D
