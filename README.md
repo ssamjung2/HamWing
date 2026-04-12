@@ -3,6 +3,26 @@ A FeatherWing for Dorji DRA818V/U modules that is compatible with Adafruit Feath
 
 ![HamWing](https://user-images.githubusercontent.com/28584917/111923447-a5a82900-8a75-11eb-97fe-d6726fccad51.png)
 
+## HamWing Board Images
+
+Front board render:
+
+![HamWing Front](Hamwing%20Board%20F.png)
+
+Back board render:
+
+![HamWing Back](Hamwing%20Board%20B.png)
+
+Full board view:
+
+![FeatherWing KC5 Full](FeatherWing_KC5%20-%20Full.jpg)
+
+Additional board views:
+
+![FeatherWing KC5 View 1](FeatherWing_KC5%201.png)
+
+![FeatherWing KC5 View 2](FeatherWing_KC5.png)
+
 The HamWing FeatherWing allows you to create a fully functional VHF/UHF transceiver using the Adafruit Feather platform. It has the same physical dimensions as the Feather Tripler making it easy to add a microcontroller as well as other FeatherWings like an OLED for a display. The modules are powered via the BAT pin to allow use with a LiPo pack connected to the Feather used for control. The HamWing was designed around the use of an Adafruit Feather M0 but should be compatible with other Feathers as well. We will list other compatible boards as they are verified to work.
 
 The HamWIng can be built as a single band transceiver by populating only one RF module, low pass filter components and u.FL connector.
@@ -18,6 +38,21 @@ This project uses the following license for hardware, software and documentation
 ## DRA818 Pin And Signal Assignments (From KiCad Project)
 
 The tables below are derived from `KiCad/FeatherWing_KC5.kicad_pcb` and cross-checked with `KiCad/FeatherWing_KC5.sch`.
+
+### DRA818 Pins Quick Reference
+
+U1 is the VHF module position (DRA818V) and U2 is the UHF module position (DRA818U).
+
+| DRA818 Pad | Board-Level Function |
+|---|---|
+| 8 | VBAT supply input |
+| 9, 10 | Ground |
+| 12 | RF output into LPF and then u.FL connector |
+| 16, 17 | UART/control serial path (direct on U1, jumper-routed on U2) |
+| 6, 7 | Shared control lines (JP4-selectable + common A4 line) |
+| 18 | Shared audio/control node tied to C9 network |
+
+For full per-pad net assignments for both modules, use the complete table below.
 
 ### DRA818 Module Pad Mapping
 
