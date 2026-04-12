@@ -15,7 +15,56 @@ This project uses the following license for hardware, software and documentation
 
 ![hamwing_license](https://user-images.githubusercontent.com/28584917/112387754-86eda080-8cc8-11eb-9b5d-293d7445410d.png)
 
-## April 2024
-I imported the project into KiCad 8.0, and captured new renders of the project.
+## DRA818 Pin And Signal Assignments (From KiCad Project)
 
-73 de KW9D
+The tables below are derived from `KiCad/FeatherWing_KC5.kicad_pcb` and cross-checked with `KiCad/FeatherWing_KC5.sch`.
+
+### DRA818 Module Pad Mapping
+
+| DRA818 Pad | U1 (DRA818V) Assignment | U2 (DRA818U) Assignment | Notes |
+|---|---|---|---|
+| 1 | A0 | A1 | Feather GPIO/analog control lines |
+| 2 | Net-(U1-Pad2) | Net-(U2-Pad2) | Internal module signal (not named in schematic) |
+| 3 | Net-(C5-Pad1) | Net-(C6-Pad1) | Coupled through C5/C6 into audio chain |
+| 4 | Net-(U1-Pad4) | Net-(U2-Pad4) | Internal module signal (not named in schematic) |
+| 5 | A2 | A3 | Feather GPIO/analog control lines |
+| 6 | Net-(JP4-Pad1) | Net-(JP4-Pad1) | Shared control line, jumper-selectable to F5 |
+| 7 | A4 | A4 | Shared control line to both modules |
+| 8 | VBAT | VBAT | Module supply from Feather battery rail |
+| 9 | GND | GND | Ground |
+| 10 | GND | GND | Ground |
+| 11 | Net-(U1-Pad11) | Net-(U2-Pad11) | Internal module signal (not named in schematic) |
+| 12 | Net-(L3-Pad2) | Net-(L6-Pad2) | RF output path into LPF network and u.FL |
+| 13 | Net-(U1-Pad13) | Net-(U2-Pad13) | Internal module signal (not named in schematic) |
+| 14 | Net-(U1-Pad14) | Net-(U2-Pad14) | Internal module signal (not named in schematic) |
+| 15 | Net-(U1-Pad15) | Net-(U2-Pad15) | Internal module signal (not named in schematic) |
+| 16 | TX | Net-(JP2-Pad2) | U1 on Feather UART TX; U2 via JP2 to F3 |
+| 17 | RX | Net-(JP1-Pad2) | U1 on Feather UART RX; U2 via JP1 to F4 |
+| 18 | Net-(C9-Pad2) | Net-(C9-Pad2) | Shared AC-coupled/bias audio/control input node |
+
+### Feather Header And Jumper Routing
+
+| Board Signal | Source | Destination |
+|---|---|---|
+| TX | Feather J1 pin 2 | U1 pad 16 |
+| RX | Feather J1 pin 3 | U1 pad 17 |
+| F3 | Feather J2 pin 6 | JP2 pad 1 (bridge to U2 pad 16 when closed) |
+| F4 | Feather J2 pin 7 | JP1 pad 1 (bridge to U2 pad 17 when closed) |
+| F5 | Feather J2 pin 8 | JP4 pad 2 (bridge to shared U1/U2 pad 6 node when closed) |
+| A5 | Feather J1 pin 7 | JP3 pad 2 (speaker-mic PTT route when closed) |
+
+### Other Functional Connections
+
+| Function | Connection Summary |
+|---|---|
+| VHF RF output | U1 pad 12 -> L3/L2/L1 LPF network -> J3 (u.FL) |
+| UHF RF output | U2 pad 12 -> L6/L5/L4 LPF network -> J4 (u.FL) |
+| Speaker-mic jack | J5 includes ground, PTT path, and shared mic/input path |
+| Audio amp | U3 (LM4810) provides amplified audio output to the speaker-mic path |
+| Shared mic/control bias | R4/C9 network ties J5 input path to shared U1/U2 pad 18 node |
+
+### Notes
+
+- Some DRA818 nets are unnamed in this project (`Net-(Ux-PadY)`). The board files identify routing, but not all module function names.
+- To map every unnamed pad to official DRA818 pin function names, cross-reference these pad numbers with the DRA818 datasheet pinout.
+
